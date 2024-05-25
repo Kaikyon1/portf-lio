@@ -1,0 +1,122 @@
+@charset "UTF-8"
+
+* {
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+h2.titulo {
+    text-align: center;
+    color: black;
+    font-size: 34px;
+    padding-bottom: 110px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.116);
+}
+
+
+footer .line-footer p img {
+    color: black;
+    font-size: 22px;
+
+}
+
+footer .line-footer p a {
+    color: black;
+    font-size: 20px;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+    border-bottom: 2px solid white;
+}
+
+.borda {
+    border-top: 2px solid black;
+}
+
+.logo-2 {
+    font-size: 43px;
+}
+
+.abaixo {
+    font-size: 43px;
+    text-align: center;
+    font-family: fantasy;
+}
+
+.line-footer {
+    text-align: center;
+    font-size: 10px;
+    font-family: fantasy;
+}
+
+img {
+    padding-bottom: 90px;
+    padding-left: 100px;
+}
+
+.html img {
+    width: 250px;
+
+}
+
+.css img {
+    width: 400px;
+    padding-left: 50px;
+
+}
+ 
+.charp img {
+    width: 200px;
+
+}
+
+.cmais img {
+    width: 200px;
+    padding-left: 50px;
+}
+
+.txt {
+    display: flex;
+    
+}
+
+span {
+    color: rgba(0, 0, 0, 0.663);
+}
+
+@media screen and (max-width: 1020px) {
+        
+
+    .html img {
+        width: 150px;
+
+    }
+
+    .css img {
+        width: 240px;
+        padding-left: 50px;
+
+    }
+    
+    .charp img {
+        width: 140px;
+
+    }
+
+    .cmais img {
+        width: 140px;
+        margin-left: 50px;
+    }
+
+    .txt {
+        display: inline-block;
+        
+    }
+
+}

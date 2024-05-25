@@ -1,0 +1,111 @@
+@charset "UTF-8"
+
+* {
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+.titulo {
+    text-align: center;
+    color: black;
+    font-size: 34px;
+    padding-bottom: 110px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+span {
+    color: rgba(0, 0, 0, 0.663);
+}
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.116);
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer p img {
+    color: black;
+    font-size: 22px;
+
+}
+
+footer .line-footer p a {
+    color: black;
+    font-size: 20px;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+    border-bottom: 2px solid white;
+}
+
+.borda {
+    border-top: 2px solid black;
+}
+
+.logo-2 {
+    font-size: 43px;
+
+}
+.abaixo {
+    font-size: 43px;
+    text-align: center;
+    font-family: fantasy;
+}
+
+.line-footer {
+    text-align: center;
+    font-size: 10px;
+    font-family: fantasy;
+}
+
+img {
+    width: 310px;
+    border-radius: 200px 20px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.frase {
+    padding-left: 50px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+
+    .container {
+        display: inline-block;
+    }
+
+    img {
+        align-items: center;
+        width: 270px;
+        padding-left: 50px;
+        border-radius: 200px 20px;
+    }
+
+    .titulo {
+        padding-bottom: 30px;
+    }
+    
+}

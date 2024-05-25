@@ -1,0 +1,293 @@
+@charset "UTF-8"
+
+*{
+    
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2.titulo {
+    text-align: center;
+    color: black;
+    font-size: 34px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2.titulo span {
+    color: rgba(0, 0, 0, 0.663);
+
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.logo {
+    font-size: 43px;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: auto;
+}
+
+
+.flex {
+    display: flex; 
+ }
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header  a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: rgba(0, 0, 0, 0.537);
+    transform: scale(1.20);
+
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.contato button:hover, form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px rgb(0, 0, 0);
+    transform: scale(1.05);
+
+}
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section img {
+    width: 900px;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    font-size: 40px;
+    line-height: 35px;
+}
+
+.topo-do-site h1 span {
+    color: rgba(0, 0, 0, 0.662);
+}
+
+.topo-do-site .txt-kaiky p {
+    color: black;
+    margin: 40px 0px;
+    padding-left: 40px;
+}
+
+.topo-do-site .img img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+.icone a img {
+    width: 45px;
+    margin-left: 24px;
+    display: inline-block;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+.icone a img:hover {
+    box-shadow: 0px 0px 8px rgb(0, 0, 0);
+    transform: scale(1.20);
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+section.especialidade {
+    padding: 50px 5%;
+}
+
+.especialidade .especialidade-box {
+    color: black;
+    padding: 40px 4%;
+    margin-top: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.especialidade .especialidade-box a img {
+    width: 50px;
+    color: black;
+}
+
+.especialidade .especialidade-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+    
+}
+
+section.especialidade  .flex {
+    gap: 60px;
+}
+
+.especialidade .especialidade-box:hover {
+    transform: scale(1.00);
+    box-shadow: 0 0 8px black;
+}
+
+section.formulario {
+    padding: 80px 4%;
+
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: black;
+    border: 0;
+    outline: 0;
+    padding:  20px 15px;
+    border-radius: 15px;
+    color: white;
+}
+
+form textarea {
+    resize: none;
+    max-height: 240px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: .2s ;
+}
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.116);
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer p img {
+    color: black;
+    font-size: 22px;
+
+}
+
+footer .line-footer p a {
+    color: black;
+    font-size: 20px;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+    border-bottom: 2px solid white;
+}
+
+.borda {
+    border-top: 2px solid black;
+}
+
+.logo-2 {
+    font-size: 43px;
+
+}
+.abaixo {
+    font-size: 43px;
+    text-align: center;
+    font-family: fantasy;
+}
+
+.line-footer {
+    text-align: center;
+    font-size: 10px;
+    font-family: fantasy;
+}
+
+.especialidade-box p a {
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1020px)  {
+    nav {
+        display: none;
+    }
+
+    .flex {
+        flex-direction: column-reverse;
+    } 
+
+    .topo-do-site .img img {
+        width: 100%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .icone {
+        text-align: center;
+    }
+   
+}
